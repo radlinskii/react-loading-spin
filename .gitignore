@@ -63,5 +63,6 @@ typings/
 #lib directory
 lib/
 
+
 #npmignore
 .npmignore
