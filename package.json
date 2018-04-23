@@ -1,0 +1,25 @@
+{
+  "name": "react-loading-spin",
+  "version": "0.0.1",
+  "dependencies": {},
+  "description": "A simple spinning loading animation react component.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radlinskii/react-loading-spin.git"
+  },
+  "keywords": [
+    "loading-animation",
+    "react",
+    "first-package"
+  ],
+  "author": "Ignacy Radliński",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radlinskii/react-loading-spin/issues"
+  },
+  "homepage": "https://github.com/radlinskii/react-loading-spin#readme"
+}
