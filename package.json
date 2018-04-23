@@ -1,11 +1,15 @@
 {
   "name": "react-loading-spin",
   "version": "0.0.4",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.3.2"
+  },
   "description": "A simple spinning loading animation react component.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/radlinskii/react-loading-spin/issues"
   },
-  "homepage": "https://github.com/radlinskii/react-loading-spin#readme"
+  "homepage": "https://github.com/radlinskii/react-loading-spin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }

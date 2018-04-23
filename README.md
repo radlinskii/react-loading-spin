@@ -1,2 +1,2 @@
-# react-loading-spin v0.0.4
+# react-loading-spin v0.0.5
 A simple spinning loading animation react component.
