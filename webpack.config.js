@@ -12,6 +12,7 @@ const config = {
     output: {
         path: OUTPUT,
         filename: "index.js",
+        libraryTarget: "umd"
     },
 
     devtool: 'source-map',
