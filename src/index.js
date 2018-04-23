@@ -4,7 +4,7 @@ import './styles.css';
 const LoadingSpin = () => {
     return (
         <div className="container">
-            <div className="loading">DEVELOPMENT</div>
+            <div className="loading"></div>
         </div>
     );
 };
