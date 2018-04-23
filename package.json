@@ -1,6 +1,6 @@
 {
   "name": "react-loading-spin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "dependencies": {
     "react": "^16.3.2"
   },
