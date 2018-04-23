@@ -1,11 +1,9 @@
 import React from 'react';
 
-const LoadingSpin = () => {
+export default function LoadingSpin () {
     return (
         <div className="container">
             <div className="loading">DEVELOPMENT</div>
         </div>
     );
-};
-
-export default LoadingSpin;
+}
