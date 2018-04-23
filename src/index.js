@@ -1,5 +1,12 @@
-const ReactLoadingSpin = () => {
-    console.log("This is a message from the demo package");
+import React from 'react';
+
+const LoadingSpin = () => {
+    console.log('\nDEVELOPMENT\n');
+    /*return (
+        <div className="container">
+            <div className="loading">aaa</div>
+        </div>
+    );*/
 };
 
-export default ReactLoadingSpin;
+export default LoadingSpin;
