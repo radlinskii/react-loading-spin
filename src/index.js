@@ -1,12 +1,11 @@
 import React from 'react';
 
 const LoadingSpin = () => {
-    console.log('\nDEVELOPMENT\n');
-    /*return (
+    return (
         <div className="container">
-            <div className="loading">aaa</div>
+            <div className="loading">DEVELOPMENT</div>
         </div>
-    );*/
+    );
 };
 
 export default LoadingSpin;
