@@ -28,7 +28,10 @@ const config = {
             }
         }]
     },
-    mode: 'development'
+    mode: 'development',
+    externals: {
+        'react': 'commonjs react'
+    }
 };
 
 module.exports = config;
