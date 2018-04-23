@@ -37,7 +37,7 @@ const config = {
             }
         ]
     },
-    mode: 'development',
+    mode: 'production',
     externals: {
         'react': 'commonjs react'
     }
