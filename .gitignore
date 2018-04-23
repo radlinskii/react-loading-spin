@@ -60,3 +60,6 @@ typings/
 #JetBrains tools
 .idea
 
+#lib directory
+lib/
+
