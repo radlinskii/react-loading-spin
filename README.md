@@ -5,19 +5,19 @@ A simple spinning loading animation react component.
 ![Alt Text](https://i.imgur.com/n3b1ZOq.gif)
 
 ## Install
-```
+``` sh
 npm i --save react-loading-spin
 ```
 
 ## Import
-```
+``` javascript
 import LoadingSpin from 'react-loading-spin';
 ```
 
 # Use
-```
-const ExampleOfUsingLoadingSpin = () => (
-    <div className="ExampleOfUsage">
+``` javascript
+const ExampleOfUsingDefaultLoadingSpin = () => (
+    <div className = 'ExampleOfUsage'>
         <LoadingSpin/>
     </div>
 );
@@ -27,17 +27,17 @@ const ExampleOfUsingLoadingSpin = () => (
 ### Manage Properties
 **size** | **primaryColor** | **secondaryColor** | **width** | **duration** | **timingFunction** | **direction**
 
-```
+``` javascript
 const ExampleOfUsingLoadingSpinWithProps = () => (
-    <div className="ExampleOfUsage">
+    <div className = 'ExampleOfUsage'>
         <LoadingSpin
-            duration='2s'
-            width='15px'
-            timingFunction='ease-in-out'
-            direction='alternate'
-            size='200px'
-            primaryColor='yellow'
-            secondaryColor='#333'
+            duration = '2s'
+            width = '15px'
+            timingFunction = 'ease-in-out'
+            direction = 'alternate'
+            size = '200px'
+            primaryColor = 'yellow'
+            secondaryColor = '#333'
         />
     </div>
 );
