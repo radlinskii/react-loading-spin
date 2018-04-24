@@ -60,5 +60,17 @@ typings/
 #JetBrains tools
 .idea
 
-#lib directory
-lib/
+#src directory
+src/
+
+#babel configuration
+.babelrc
+
+#webpack configuration
+webpack.config.js
+
+#gitignore
+.gitignore
+
+
+*.map
