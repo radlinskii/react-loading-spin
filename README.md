@@ -2,7 +2,7 @@
 A simple spinning loading animation react component.
 
 ## Preview
-![Alt Text](https://imgur.com/UaME3w9.gif) ![Alt Text](https://i.imgur.com/R6MKodl.gif) ![Alt Text](https://i.imgur.com/n3b1ZOq.gif)
+![Alt Text](https://i.imgur.com/n3b1ZOq.gif)
 
 ## Install
 ```
@@ -15,6 +15,19 @@ import LoadingSpin from 'react-loading-spin';
 ```
 
 # Use
+```
+const ExampleOfUsingLoadingSpin = () => (
+    <div className="ExampleOfUsage">
+        <p>Patience you must have my Young Padawan</p>
+        <LoadingSpin/>
+    </div>
+);
+```
+![Alt Text](https://imgur.com/UaME3w9.gif)
+
+### Manage Properties
+**size** | **primaryColor** | **secondaryColor** | **width** | **duration** | **timingFunction** | **direction**
+
 ```
 const ExampleOfUsingLoadingSpinWithProps = () => (
     <div className="ExampleOfUsage">
@@ -31,9 +44,7 @@ const ExampleOfUsingLoadingSpinWithProps = () => (
     </div>
 );
 ```
-
-## Manage Properties
-**size** | **primaryColor** | **secondaryColor** | **width** | **duration** | **timingFunction** | **direction**
+![Alt Text](https://i.imgur.com/R6MKodl.gif)
 
 ### Built With
 * [Webpack](https://webpack.js.org/)
