@@ -7,6 +7,7 @@ const LoadingSpin = (props) => {
     let secondaryColor = '#cccccc';
     let primaryColor = '#1ecd96';
     let duration = '1.4s';
+    let timingFunction = 'ease-in-out';
 
     if(props.size){
         size = props.size;
@@ -16,6 +17,9 @@ const LoadingSpin = (props) => {
     }
     if(props.duration){
         duration = props.duration;
+    }
+    if(props.timingFunction){
+        timingFunction = props.timingFunction;
     }
     if(props.secondaryColor){
         secondaryColor = props.secondaryColor;
@@ -33,6 +37,7 @@ const LoadingSpin = (props) => {
                 width: size,
                 borderWidth: width,
                 animationDuration: duration,
+                animationTimingFunction: timingFunction,
                 borderColor: secondaryColor,
                 borderLeftColor: primaryColor,
                 borderTopColor: primaryColor,
