@@ -18,7 +18,6 @@ import LoadingSpin from 'react-loading-spin';
 ```
 const ExampleOfUsingLoadingSpin = () => (
     <div className="ExampleOfUsage">
-        <p>Patience you must have my Young Padawan</p>
         <LoadingSpin/>
     </div>
 );
@@ -31,7 +30,6 @@ const ExampleOfUsingLoadingSpin = () => (
 ```
 const ExampleOfUsingLoadingSpinWithProps = () => (
     <div className="ExampleOfUsage">
-        <p>Patience you must have my Young Padawan</p>
         <LoadingSpin
             duration='2s'
             width='15px'
