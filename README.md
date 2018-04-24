@@ -22,7 +22,7 @@ const ExampleOfUsingLoadingSpin = () => (
     </div>
 );
 ```
-![Alt Text](https://imgur.com/UaME3w9.gif)
+![Alt Text](https://i.imgur.com/tc13kFO.gif)
 
 ### Manage Properties
 **size** | **primaryColor** | **secondaryColor** | **width** | **duration** | **timingFunction** | **direction**
