@@ -23,9 +23,9 @@ const LoadingSpin = (props) => {
             {
                 height: size,
                 width: size,
+                borderColor: secondaryColor,
                 borderLeftColor: primaryColor,
                 borderTopColor: primaryColor,
-                borderColor: secondaryColor,
             }
         }></div>
     );
