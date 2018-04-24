@@ -72,5 +72,5 @@ webpack.config.js
 #gitignore
 .gitignore
 
-
+#.map files
 *.map
