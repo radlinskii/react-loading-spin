@@ -1,8 +1,6 @@
 .loading {
-    width: 60px;
-    height: 60px;
     display: inline-block;
-    border: 6px solid;
+    border-style: solid;
     border-radius: 50%;
     animation: spin 1.4s infinite ease-in-out;
 }
