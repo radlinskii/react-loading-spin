@@ -12,10 +12,7 @@ npm i --save react-loading-spin
 
 ## Import
 ```
-...
 import LoadingSpin from 'react-loading-spin';
-...
-
 ```
 
 # Use
