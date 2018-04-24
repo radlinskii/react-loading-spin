@@ -21,7 +21,7 @@ const LoadingSpin = (props) => {
             className="loading"
             style = {
             {
-                transform: `scale(${scale}`,
+                transform: `scale(${scale})`,
                 borderColor: secondaryColor,
                 borderLeftColor: primaryColor,
                 borderTopColor: primaryColor,
