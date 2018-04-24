@@ -35,7 +35,7 @@ const ExampleOfUsingLoadingSpinWithProps = () => (
             width='15px'
             timingFunction='ease-in-out'
             direction='alternate'
-            size='300px'
+            size='200px'
             primaryColor='yellow'
             secondaryColor='#333'
         />
