@@ -41,4 +41,4 @@ const ExampleOfUsingLoadingSpinWithProps = () => (
 * [Pleasure](https://en.wikipedia.org/wiki/Pleasure)
 
 ### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT - see the [LICENSE](LICENSE) file for details.
