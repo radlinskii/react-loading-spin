@@ -1,9 +1,8 @@
 # react-loading-spin [![npm version](https://badge.fury.io/js/react-loading-spin.svg)](https://badge.fury.io/js/react-loading-spin) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 A simple spinning loading animation react component.
 
-
 ## Preview
-![Alt Text](https://imgur.com/UaME3w9.gif) ![Alt Text](https://i.imgur.com/R6MKodl.gif)
+![Alt Text](https://imgur.com/UaME3w9.gif) ![Alt Text](https://i.imgur.com/R6MKodl.gif) ![Alt Text](https://i.imgur.com/n3b1ZOq.gif)
 
 ## Install
 ```
