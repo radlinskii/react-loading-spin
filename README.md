@@ -3,7 +3,7 @@ A simple spinning loading animation react component.
 
 
 ## Preview
-![Alt Text](https://imgur.com/UaME3w9.gif)
+![Alt Text](https://imgur.com/UaME3w9.gif) ![Alt Text](https://i.imgur.com/R6MKodl.gif)
 
 ## Install
 ```
