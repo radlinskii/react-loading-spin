@@ -1,4 +1,6 @@
 .loading {
+    width: 60px;
+    height: 60px;
     display: inline-block;
     border: 6px solid;
     border-radius: 50%;
