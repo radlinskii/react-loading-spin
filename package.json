@@ -13,8 +13,12 @@
     "url": "git+https://github.com/radlinskii/react-loading-spin.git"
   },
   "keywords": [
+    "react-component",
+    "spin",
     "loading-animation",
+    "spinner",
     "react",
+    "component",
     "first-package"
   ],
   "author": "Ignacy Radliński radlinskiignacy@gmail.com",
