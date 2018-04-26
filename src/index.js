@@ -14,7 +14,7 @@ const LoadingSpin = (props) => {
 
     return (
         <div
-            className="loading"
+            className={'loading'}
             style={
                 {
                     height: size,
