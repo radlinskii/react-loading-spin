@@ -1,0 +1,153 @@
+{
+    "plugins": ["@typescript-eslint", "react", "jest", "prettier"],
+    "extends": [
+        "plugin:import/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "rules": {
+        "no-unused-vars": "off",
+        "no-console": "warn",
+        "prefer-const": "error",
+        "semi": ["error", "never"],
+        "max-len": [
+            "error",
+            120,
+            {
+                "ignoreComments": true,
+                "ignoreRegExpLiterals": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "tabWidth": 4
+            }
+        ],
+        "no-irregular-whitespace": [
+            "error",
+            {
+                "skipComments": false,
+                "skipRegExps": false,
+                "skipStrings": false,
+                "skipTemplates": false
+            }
+        ],
+        "no-restricted-imports": [
+            "error",
+            {
+                "paths": [
+                    {
+                        "name": "lodash/get",
+                        "message": "Please use get from /universal/utils"
+                    },
+                    {
+                        "name": "lodash",
+                        "importNames": ["get"],
+                        "message": "Please use get from /universal/utils"
+                    }
+                ]
+            }
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "classes": true,
+                "functions": false,
+                "variables": true
+            }
+        ],
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "next": "return",
+                "prev": "*"
+            },
+            {
+                "blankLine": "any",
+                "next": "return",
+                "prev": ["block-like", "const", "let", "var"]
+            },
+            {
+                "blankLine": "always",
+                "next": "export",
+                "prev": "*"
+            },
+            {
+                "blankLine": "any",
+                "next": "export",
+                "prev": "export"
+            }
+        ],
+        "@typescript-eslint/consistent-type-imports": ["error"],
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/no-unused-vars": "error",
+
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "never"
+            }
+        ],
+
+        "jest/consistent-test-it": [
+            "error",
+            {
+                "fn": "test"
+            }
+        ],
+        "jest/expect-expect": "error",
+        "jest/prefer-todo": "warn",
+
+        "jsx-a11y/label-has-associated-control": "warn",
+
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 120,
+                "singleQuote": true,
+                "tabWidth": 4,
+                "trailingComma": "es5",
+                "semi": false
+            }
+        ],
+
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [".tsx"]
+            }
+        ],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-key": "error",
+        "react/jsx-sort-props": [
+            "error",
+            {
+                "ignoreCase": true
+            }
+        ],
+        "react/no-access-state-in-setstate": "error",
+        "react/prefer-stateless-function": 2,
+        "react/require-optimization": "error"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "ignorePatterns": "/lib"
+}
