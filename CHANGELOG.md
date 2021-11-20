@@ -1,3 +1,5 @@
+### [2.1.1](https://github.com/radlinskii/react-loading-spin/compare/v2.1.0...v2.1.1) (2021-11-20)
+
 ## 2.1.0 (2021-11-20)
 
 ### Features
