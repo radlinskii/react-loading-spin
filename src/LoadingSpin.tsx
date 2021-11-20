@@ -35,7 +35,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
 
     return (
         <div
-            className="loadingSpin"
+            className="loading-spin"
             data-testid="loading-spin"
             style={{
                 height: size,

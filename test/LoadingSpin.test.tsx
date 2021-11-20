@@ -11,7 +11,7 @@ describe('LoadingSpin', () => {
         expect(element).toBeInTheDocument()
         expect(element).toBeVisible()
         expect(element).toBeEmptyDOMElement()
-        expect(element).toHaveClass('loadingSpin')
+        expect(element).toHaveClass('loading-spin')
         expect(element).toHaveStyle({
             height: DEFAULT_VALUES.size,
             width: DEFAULT_VALUES.size,
@@ -44,7 +44,7 @@ describe('LoadingSpin', () => {
         expect(element).toBeInTheDocument()
         expect(element).toBeVisible()
         expect(element).toBeEmptyDOMElement()
-        expect(element).toHaveClass('loadingSpin')
+        expect(element).toHaveClass('loading-spin')
         expect(element).toHaveStyle({
             height: '40px',
             width: '40px',

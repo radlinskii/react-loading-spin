@@ -1,13 +1,12 @@
 {
     "extends": "stylelint-config-standard",
-    "syntax": "scss",
+    "syntax": "css",
     "rules": {
         "string-quotes": "single",
         "indentation": 4,
         "selector-list-comma-newline-after": "always-multi-line",
         "block-no-empty": true,
         "at-rule-no-unknown": null,
-        "scss/at-rule-no-unknown": true,
         "no-descending-specificity": true,
         "property-no-unknown": true,
         "selector-pseudo-class-no-unknown": [
