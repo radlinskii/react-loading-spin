@@ -8,7 +8,7 @@
         "clean": "rimraf lib lib-esm _bundles",
         "lint:ts": "eslint .",
         "prepare": "husky install",
-        "release": "release",
+        "release": "release-it",
         "test": "jest",
         "typecheck": "tsc --noEmit"
     },
