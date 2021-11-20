@@ -18,8 +18,8 @@
         "*.{json,graphql,md}": [
             "prettier --write"
         ],
-        "*.scss": [
-            "stylelint --syntax=scss --fix"
+        "*.css": [
+            "stylelint --fix"
         ]
     },
     "files": [
@@ -70,6 +70,8 @@
         "jest": "^27.3.1",
         "lint-staged": "^12.0.3",
         "release-it": "^14.11.8",
+        "stylelint": "^14.1.0",
+        "stylelint-config-standard": "^24.0.0",
         "typescript": "^4.5.2"
     }
 }
