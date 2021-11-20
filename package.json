@@ -44,7 +44,8 @@
     },
     "homepage": "https://github.com/radlinskii/react-loading-spin#readme",
     "peerDependencies": {
-        "react": "^17.0.2"
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.16.4",
@@ -72,8 +73,5 @@
         "release-it": "^14.11.8",
         "rimraf": "^3.0.2",
         "typescript": "^4.5.2"
-    },
-    "dependencies": {
-        "aphrodite": "^2.4.0"
     }
 }
