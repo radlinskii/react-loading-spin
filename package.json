@@ -1,44 +1,75 @@
 {
-  "name": "react-loading-spin",
-  "version": "1.0.9",
-  "description": "A simple spinning loading animation react component.",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "prepare": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/radlinskii/react-loading-spin.git"
-  },
-  "keywords": [
-    "react-component",
-    "spin",
-    "loading-animation",
-    "spinner",
-    "react",
-    "component",
-    "first-package"
-  ],
-  "author": "Ignacy Radliński radlinskiignacy@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/radlinskii/react-loading-spin/issues"
-  },
-  "homepage": "https://github.com/radlinskii/react-loading-spin#readme",
-  "peerDependencies": {
-    "react": "^16.8.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.4",
-    "webpack-cli": "^3.2.3"
-  }
+    "name": "react-loading-spin",
+    "version": "1.0.9",
+    "description": "A simple spinning loading animation react component.",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint .",
+        "prepare": "husky install",
+        "release": "release",
+        "test": "jest",
+        "typecheck": "tsc --noEmit"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --fix"
+        ],
+        "*.{json,graphql,md}": [
+            "prettier --write"
+        ],
+        "*.scss": [
+            "stylelint --syntax=scss --fix"
+        ]
+    },
+    "files": [
+        "lib/**/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/radlinskii/react-loading-spin.git"
+    },
+    "keywords": [
+        "react-component",
+        "spin",
+        "loading-animation",
+        "spinner",
+        "react",
+        "component",
+        "first-package"
+    ],
+    "author": "Ignacy Radliński radlinskiignacy@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/radlinskii/react-loading-spin/issues"
+    },
+    "homepage": "https://github.com/radlinskii/react-loading-spin#readme",
+    "peerDependencies": {
+        "react": "^17.0.2"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.4",
+        "@babel/preset-react": "^7.16.0",
+        "@babel/preset-typescript": "^7.16.0",
+        "@commitlint/cli": "^15.0.0",
+        "@commitlint/config-conventional": "^15.0.0",
+        "@release-it/conventional-changelog": "^3.3.0",
+        "@testing-library/jest-dom": "^5.15.0",
+        "@testing-library/react": "^12.1.2",
+        "@types/react": "^17.0.35",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "babel-jest": "^27.3.1",
+        "csstype": "^3.0.10",
+        "eslint": "^8.2.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jest": "^25.2.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.27.1",
+        "husky": "^7.0.4",
+        "jest": "^27.3.1",
+        "lint-staged": "^12.0.3",
+        "release-it": "^14.11.8",
+        "typescript": "^4.5.2"
+    }
 }
