@@ -56,7 +56,6 @@
         "@testing-library/react": "^12.1.2",
         "@types/react": "^17.0.35",
         "@typescript-eslint/eslint-plugin": "^5.4.0",
-        "aphrodite": "^2.4.0",
         "babel-jest": "^27.3.1",
         "babel-loader": "^8.2.3",
         "csstype": "^3.0.10",
@@ -72,5 +71,8 @@
         "release-it": "^14.11.8",
         "rimraf": "^3.0.2",
         "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "aphrodite": "^2.4.0"
     }
 }
