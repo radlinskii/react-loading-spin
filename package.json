@@ -4,9 +4,9 @@
     "description": "A simple spinning loading animation react component.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "tsc",
+        "build": "webpack",
+        "clean": "rimraf lib lib-esm _bundles",
         "lint:ts": "eslint .",
-        "lint:css": "stylelint .",
         "prepare": "husky install",
         "release": "release",
         "test": "jest",
@@ -18,13 +18,10 @@
         ],
         "*.{json,graphql,md}": [
             "prettier --write"
-        ],
-        "*.css": [
-            "stylelint --fix"
         ]
     },
     "files": [
-        "lib/**/*"
+        "lib"
     ],
     "repository": {
         "type": "git",
@@ -59,7 +56,9 @@
         "@testing-library/react": "^12.1.2",
         "@types/react": "^17.0.35",
         "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "aphrodite": "^2.4.0",
         "babel-jest": "^27.3.1",
+        "babel-loader": "^8.2.3",
         "csstype": "^3.0.10",
         "eslint": "^8.2.0",
         "eslint-plugin-import": "^2.25.3",
@@ -71,8 +70,7 @@
         "jest": "^27.3.1",
         "lint-staged": "^12.0.3",
         "release-it": "^14.11.8",
-        "stylelint": "^14.1.0",
-        "stylelint-config-standard": "^24.0.0",
+        "rimraf": "^3.0.2",
         "typescript": "^4.5.2"
     }
 }

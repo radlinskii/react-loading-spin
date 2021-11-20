@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react'
 import type * as CSS from 'csstype'
-import './styles.css'
+import { StyleSheet, css } from 'aphrodite'
 
 export type LoadingSpinProps = {
     size?: CSS.Property.Width & CSS.Property.Height
@@ -11,6 +11,23 @@ export type LoadingSpinProps = {
     animationTimingFunction?: CSS.Property.AnimationTimingFunction
     animationDirection?: CSS.Property.AnimationDirection
 }
+
+const styles = StyleSheet.create({
+    loadingSpinRoot: {
+        display: 'inline-block',
+        borderStyle: 'solid',
+        borderRadius: '50%',
+        animationIterationCount: 'infinite',
+        animationName: {
+            '0%': {
+                transform: 'rotate(0deg)',
+            },
+            '100%': {
+                transform: 'rotate(720deg)',
+            },
+        },
+    },
+})
 
 export const DEFAULT_VALUES = {
     size: '60px',
@@ -35,7 +52,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
 
     return (
         <div
-            className="loading-spin"
+            className={css(styles.loadingSpinRoot)}
             data-testid="loading-spin"
             style={{
                 height: size,
