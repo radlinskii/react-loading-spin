@@ -18,8 +18,6 @@ jobs:
               run: npm ci --quiet
             - name: lint ts
               run: npm run lint:ts
-            - name: lint css
-              run: npm run lint:css
             - name: compile typescript
               run: npm run typecheck
             - name: run tests
