@@ -1,10 +1,10 @@
 {
     "name": "react-loading-spin",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "A simple spinning loading animation react component.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "webpack",
+        "build": "tsc",
         "clean": "rimraf lib lib-esm _bundles",
         "lint:ts": "eslint .",
         "prepublishOnly": "npm run clean && npm run build",
