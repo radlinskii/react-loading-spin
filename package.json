@@ -4,7 +4,7 @@
     "description": "A simple spinning loading animation react component.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "tsc",
+        "build": "webpack",
         "lint:ts": "eslint .",
         "lint:css": "stylelint .",
         "prepare": "husky install",
