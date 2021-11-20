@@ -7,6 +7,7 @@
         "build": "webpack",
         "clean": "rimraf lib lib-esm _bundles",
         "lint:ts": "eslint .",
+        "prepublishOnly": "npm run clean && npm run build",
         "prepare": "husky install",
         "release": "release-it",
         "test": "jest",
