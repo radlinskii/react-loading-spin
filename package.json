@@ -5,7 +5,8 @@
     "main": "lib/index.js",
     "scripts": {
         "build": "tsc",
-        "lint": "eslint .",
+        "lint:ts": "eslint .",
+        "lint:css": "stylelint .",
         "prepare": "husky install",
         "release": "release",
         "test": "jest",
