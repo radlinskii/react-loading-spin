@@ -1,3 +1,9 @@
+### [2.1.3](https://github.com/radlinskii/react-loading-spin/compare/v2.1.1...v2.1.3) (2021-11-20)
+
+### Bug Fixes
+
+-   fix build script ([b9f6584](https://github.com/radlinskii/react-loading-spin/commit/b9f658475e7358f59ae411372d455d268053685a))
+
 ### [2.1.1](https://github.com/radlinskii/react-loading-spin/compare/v2.1.0...v2.1.1) (2021-11-20)
 
 ## 2.1.0 (2021-11-20)
