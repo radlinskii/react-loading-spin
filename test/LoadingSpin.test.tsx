@@ -1,7 +1,15 @@
 import { render, screen } from '@testing-library/react'
+import { StyleSheetTestUtils } from 'aphrodite'
 import LoadingSpin, { DEFAULT_VALUES } from '../src/LoadingSpin'
 
 describe('LoadingSpin', () => {
+    beforeEach(() => {
+        StyleSheetTestUtils.suppressStyleInjection()
+    })
+    afterEach(() => {
+        StyleSheetTestUtils.clearBufferAndResumeStyleInjection()
+    })
+
     test('should render with default props', () => {
         //when
         render(<LoadingSpin />)
@@ -11,7 +19,6 @@ describe('LoadingSpin', () => {
         expect(element).toBeInTheDocument()
         expect(element).toBeVisible()
         expect(element).toBeEmptyDOMElement()
-        expect(element).toHaveClass('loading-spin')
         expect(element).toHaveStyle({
             height: DEFAULT_VALUES.size,
             width: DEFAULT_VALUES.size,
@@ -44,7 +51,6 @@ describe('LoadingSpin', () => {
         expect(element).toBeInTheDocument()
         expect(element).toBeVisible()
         expect(element).toBeEmptyDOMElement()
-        expect(element).toHaveClass('loading-spin')
         expect(element).toHaveStyle({
             height: '40px',
             width: '40px',
