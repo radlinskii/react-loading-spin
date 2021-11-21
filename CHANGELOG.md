@@ -1,3 +1,5 @@
+### [2.1.5](https://github.com/radlinskii/react-loading-spin/compare/v2.1.4...v2.1.5) (2021-11-21)
+
 ### [2.1.4](https://github.com/radlinskii/react-loading-spin/compare/v2.1.3...v2.1.4) (2021-11-21)
 
 ### [2.1.3](https://github.com/radlinskii/react-loading-spin/compare/v2.1.1...v2.1.3) (2021-11-20)
