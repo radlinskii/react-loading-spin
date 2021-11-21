@@ -1,3 +1,11 @@
+### [2.1.6](https://github.com/radlinskii/react-loading-spin/compare/v2.1.5...v2.1.6) (2021-11-21)
+
+### Bug Fixes
+
+-   fix animation duration ([#6](https://github.com/radlinskii/react-loading-spin/issues/6)) ([c6dfd08](https://github.com/radlinskii/react-loading-spin/commit/c6dfd08ab3b41a1ea9123eb007ab89124f8c84ae))
+-   fix release-it config ([58734e0](https://github.com/radlinskii/react-loading-spin/commit/58734e057c94ec19e3acde72cb6641ac036415a3))
+-   fix release-it host ([2794f35](https://github.com/radlinskii/react-loading-spin/commit/2794f354f99fc12391b5fac50548c59ea6c855eb))
+
 ### [2.1.5](https://github.com/radlinskii/react-loading-spin/compare/v2.1.4...v2.1.5) (2021-11-21)
 
 ### [2.1.4](https://github.com/radlinskii/react-loading-spin/compare/v2.1.3...v2.1.4) (2021-11-21)
