@@ -15,7 +15,7 @@ describe('LoadingSpin', () => {
         expect(element).toHaveStyle({
             height: DEFAULT_VALUES.size,
             width: DEFAULT_VALUES.size,
-            borderWidth: DEFAULT_VALUES.borderWidth,
+            borderWidth: DEFAULT_VALUES.width,
             animationDuration: DEFAULT_VALUES.animationDuration,
             animationTimingFunction: DEFAULT_VALUES.animationTimingFunction,
             animationDirection: DEFAULT_VALUES.animationDirection,
@@ -38,11 +38,11 @@ describe('LoadingSpin', () => {
                 animationDirection="alternate"
                 animationDuration="10s"
                 animationTimingFunction="linear"
-                borderWidth="10px"
                 numberOfRotationsInAnimation={3}
                 primaryColor="rgb(244,11,21)"
                 secondaryColor="#aaa"
                 size="40px"
+                width="10px"
             />
         )
         const element = screen.getByTestId('loading-spin')

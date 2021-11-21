@@ -3,7 +3,7 @@ import type * as CSS from 'csstype'
 
 export type LoadingSpinProps = {
     size?: CSS.Property.Width & CSS.Property.Height
-    borderWidth?: CSS.Property.BorderWidth
+    width?: CSS.Property.BorderWidth
     secondaryColor?: CSS.Property.Color
     primaryColor?: CSS.Property.Color
     animationDuration?: CSS.Property.AnimationDuration
@@ -14,7 +14,7 @@ export type LoadingSpinProps = {
 
 export const DEFAULT_VALUES = {
     size: '60px',
-    borderWidth: '6px',
+    width: '6px',
     secondaryColor: '#cccccc',
     primaryColor: '#1ecd96',
     animationDuration: '2s',
@@ -26,7 +26,7 @@ export const DEFAULT_VALUES = {
 function LoadingSpin(props: LoadingSpinProps): ReactElement {
     const {
         size = DEFAULT_VALUES.size,
-        borderWidth = DEFAULT_VALUES.borderWidth,
+        width = DEFAULT_VALUES.width,
         secondaryColor = DEFAULT_VALUES.secondaryColor,
         primaryColor = DEFAULT_VALUES.primaryColor,
         animationDuration = DEFAULT_VALUES.animationDuration,
@@ -60,7 +60,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
 
                     height: size,
                     width: size,
-                    borderWidth: borderWidth,
+                    borderWidth: width,
                     animationTimingFunction: animationTimingFunction,
                     animationDirection: animationDirection,
                     animationDuration: animationDuration,
