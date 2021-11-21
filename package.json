@@ -1,6 +1,6 @@
 {
     "name": "react-loading-spin",
-    "version": "2.1.7",
+    "version": "2.1.8",
     "description": "A simple animated spinner react component.",
     "main": "lib/index.js",
     "scripts": {
