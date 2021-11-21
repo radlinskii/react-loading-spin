@@ -1,7 +1,7 @@
 {
     "name": "react-loading-spin",
     "version": "2.1.7",
-    "description": "A simple spinning loading animation react component.",
+    "description": "A simple animated spinner react component.",
     "main": "lib/index.js",
     "scripts": {
         "build": "tsc --emitDeclarationOnly &&  webpack",
