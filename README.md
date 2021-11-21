@@ -18,7 +18,7 @@ npm i --save react-loading-spin
 import LoadingSpin from "react-loading-spin";
 ```
 
-# Use
+## Use
 
 ```javascript
 const ExampleOfUsingDefaultLoadingSpin = () => (
@@ -32,7 +32,16 @@ const ExampleOfUsingDefaultLoadingSpin = () => (
 
 ### Manage Properties
 
-**size** | **primaryColor** | **secondaryColor** | **width** | **duration** | **timingFunction** | **direction**
+| Property name  | type | Required | Default value | Comment |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| **size** | `string` | `false` | '60px' | CSS length value for `height` and `width` of the spinner |
+| **width** | `string` | `false` | '6px' | CSS length value for width the spinner |
+| **primaryColor** | `string` | `false` | '#1ecd96' | CSS color value for one half of the loader |
+| **secondaryColor** | `string` | `false` | '#cccccc' | CSS color value for second half of the loader |
+| **animationDuration** | `string` | `false` | '2s' | CSS `animation-duration`property value |
+| **animationTimingFunction** | `string` | `false` | 'ease-in-out' | CSS `animation-timing-function` property value |
+| **animationDirection** | `string` | `false` | 'normal' | CSS `animation-direction` property value |
+| **numberOfRotationsInAnimation** | `number` | `false` | 2 | number of spins during single animation |
 
 ```javascript
 const ExampleOfUsingLoadingSpinWithProps = () => (
@@ -45,6 +54,7 @@ const ExampleOfUsingLoadingSpinWithProps = () => (
             size="200px"
             primaryColor="yellow"
             secondaryColor="#333"
+            numberOfRotationsInAnimation={2}
         />
     </div>
 );
