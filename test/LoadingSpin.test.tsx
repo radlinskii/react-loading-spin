@@ -15,7 +15,7 @@ describe('LoadingSpin', () => {
             height: DEFAULT_VALUES.size,
             width: DEFAULT_VALUES.size,
             borderWidth: DEFAULT_VALUES.borderWidth,
-            animationDuration: DEFAULT_VALUES.animationDuration,
+            // animationDurationMS: DEFAULT_VALUES.animationDurationMS,
             animationTimingFunction: DEFAULT_VALUES.animationTimingFunction,
             animationDirection: DEFAULT_VALUES.animationDirection,
             borderColor: DEFAULT_VALUES.secondaryColor,
@@ -29,7 +29,7 @@ describe('LoadingSpin', () => {
         render(
             <LoadingSpin
                 animationDirection="alternate"
-                animationDuration="10s"
+                animationDurationMS={1000}
                 animationTimingFunction="linear"
                 borderWidth="10px"
                 primaryColor="rgb(244,11,21)"
@@ -47,7 +47,7 @@ describe('LoadingSpin', () => {
             height: '40px',
             width: '40px',
             borderWidth: '10px',
-            animationDuration: '10s',
+            // animationDurationMS: '10s',
             animationTimingFunction: 'linear',
             animationDirection: 'alternate',
             borderColor: '#aaa',

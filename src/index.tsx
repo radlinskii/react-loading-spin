@@ -7,7 +7,7 @@ export type LoadingSpinProps = {
     borderWidth?: CSS.Property.BorderWidth
     secondaryColor?: CSS.Property.Color
     primaryColor?: CSS.Property.Color
-    animationDuration?: CSS.Property.AnimationDuration
+    animationDurationMS?: number
     animationTimingFunction?: CSS.Property.AnimationTimingFunction
     animationDirection?: CSS.Property.AnimationDirection
 }
@@ -17,7 +17,7 @@ export const DEFAULT_VALUES = {
     borderWidth: '6px',
     secondaryColor: '#cccccc',
     primaryColor: '#1ecd96',
-    animationDuration: '1.4s',
+    animationDurationMS: '2000',
     animationTimingFunction: 'ease-in-out',
     animationDirection: 'normal',
 }
@@ -28,7 +28,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
         borderWidth = DEFAULT_VALUES.borderWidth,
         secondaryColor = DEFAULT_VALUES.secondaryColor,
         primaryColor = DEFAULT_VALUES.primaryColor,
-        animationDuration = DEFAULT_VALUES.animationDuration,
+        animationDurationMS = DEFAULT_VALUES.animationDurationMS,
         animationTimingFunction = DEFAULT_VALUES.animationTimingFunction,
         animationDirection = DEFAULT_VALUES.animationDirection,
     } = props
@@ -49,6 +49,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
                     },
                 ],
                 {
+                    duration: animationDurationMS,
                     iterations: Infinity,
                 }
             )
@@ -67,7 +68,6 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
                 height: size,
                 width: size,
                 borderWidth: borderWidth,
-                animationDuration: animationDuration,
                 animationTimingFunction: animationTimingFunction,
                 animationDirection: animationDirection,
                 borderColor: secondaryColor,
