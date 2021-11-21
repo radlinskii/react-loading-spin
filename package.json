@@ -4,8 +4,8 @@
     "description": "A simple spinning loading animation react component.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "tsc",
-        "clean": "rimraf lib lib-esm _bundles",
+        "build": "tsc --emitDeclarationOnly &&  webpack",
+        "clean": "rimraf lib",
         "lint:ts": "eslint .",
         "prepublishOnly": "npm run clean && npm run build",
         "prepare": "husky install",
@@ -17,7 +17,7 @@
         "*.{js,ts,tsx}": [
             "eslint --fix"
         ],
-        "*.{json,graphql,md}": [
+        "*.{json,md}": [
             "prettier --write"
         ]
     },
@@ -43,10 +43,6 @@
         "url": "https://github.com/radlinskii/react-loading-spin/issues"
     },
     "homepage": "https://github.com/radlinskii/react-loading-spin#readme",
-    "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-    },
     "devDependencies": {
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-react": "^7.16.0",
@@ -72,6 +68,12 @@
         "lint-staged": "^12.0.3",
         "release-it": "^14.11.8",
         "rimraf": "^3.0.2",
-        "typescript": "^4.5.2"
+        "typescript": "^4.5.2",
+        "webpack": "^5.64.2",
+        "webpack-cli": "^4.9.1"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     }
 }
