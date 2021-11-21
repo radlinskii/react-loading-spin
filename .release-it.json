@@ -22,6 +22,9 @@
             "infile": "CHANGELOG.md"
         }
     },
+    "npm": {
+        "publish": false
+    },
     "git": {
         "requireCleanWorkingDir": true,
         "requireBranch": "master",
@@ -29,7 +32,6 @@
         "tagName": "v${version}"
     },
     "github": {
-        "release": true,
-        "web": true
+        "release": true
     }
 }
