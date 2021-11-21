@@ -31,6 +31,6 @@
     "github": {
         "release": true,
         "tokenRef": "GITHUB_TOKEN",
-        "host": "github.schibsted.io"
+        "host": "github"
     }
 }
