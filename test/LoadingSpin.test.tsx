@@ -6,6 +6,7 @@ describe('LoadingSpin', () => {
         //when
         render(<LoadingSpin />)
         const element = screen.getByTestId('loading-spin')
+        const styleElement = screen.getByTestId('loading-spin-style')
 
         //then
         expect(element).toBeInTheDocument()
@@ -22,6 +23,12 @@ describe('LoadingSpin', () => {
             borderLeftColor: DEFAULT_VALUES.primaryColor,
             borderTopColor: DEFAULT_VALUES.primaryColor,
         })
+
+        expect(styleElement).toHaveTextContent(
+            `@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(${
+                DEFAULT_VALUES.numberOfRotationsInAnimation * 360
+            }deg); } }`
+        )
     })
 
     test('should render with passed props set in style attribute', () => {
@@ -32,12 +39,14 @@ describe('LoadingSpin', () => {
                 animationDuration="10s"
                 animationTimingFunction="linear"
                 borderWidth="10px"
+                numberOfRotationsInAnimation={3}
                 primaryColor="rgb(244,11,21)"
                 secondaryColor="#aaa"
                 size="40px"
             />
         )
         const element = screen.getByTestId('loading-spin')
+        const styleElement = screen.getByTestId('loading-spin-style')
 
         //then
         expect(element).toBeInTheDocument()
@@ -54,5 +63,9 @@ describe('LoadingSpin', () => {
             borderLeftColor: 'rgb(244,11,21)',
             borderTopColor: 'rgb(244,11,21)',
         })
+
+        expect(styleElement).toHaveTextContent(
+            `@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(1080deg); } }`
+        )
     })
 })

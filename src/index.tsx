@@ -37,7 +37,7 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
 
     return (
         <>
-            <style>
+            <style data-testid="loading-spin-style">
                 {`
                 @keyframes spin {
                     0% {
