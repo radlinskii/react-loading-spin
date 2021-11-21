@@ -48,7 +48,9 @@ function LoadingSpin(props: LoadingSpinProps): ReactElement {
                         transform: 'rotate(720deg)',
                     },
                 ],
-                2000
+                {
+                    iterations: Infinity,
+                }
             )
         }
     }, [])
