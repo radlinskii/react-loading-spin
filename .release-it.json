@@ -30,7 +30,6 @@
     },
     "github": {
         "release": true,
-        "tokenRef": "GITHUB_TOKEN",
-        "host": "github"
+        "web": true
     }
 }
