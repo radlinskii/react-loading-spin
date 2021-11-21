@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import LoadingSpin, { DEFAULT_VALUES } from '../src/LoadingSpin'
+import LoadingSpin, { DEFAULT_VALUES } from '../src'
 
 describe('LoadingSpin', () => {
     test.skip('should render with default props', () => {
