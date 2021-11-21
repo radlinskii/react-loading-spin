@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import LoadingSpin, { DEFAULT_VALUES } from '../src'
 
 describe('LoadingSpin', () => {
-    test.skip('should render with default props', () => {
+    test('should render with default props', () => {
         //when
         render(<LoadingSpin />)
         const element = screen.getByTestId('loading-spin')
@@ -15,7 +15,7 @@ describe('LoadingSpin', () => {
             height: DEFAULT_VALUES.size,
             width: DEFAULT_VALUES.size,
             borderWidth: DEFAULT_VALUES.borderWidth,
-            // animationDurationMS: DEFAULT_VALUES.animationDurationMS,
+            animationDuration: DEFAULT_VALUES.animationDuration,
             animationTimingFunction: DEFAULT_VALUES.animationTimingFunction,
             animationDirection: DEFAULT_VALUES.animationDirection,
             borderColor: DEFAULT_VALUES.secondaryColor,
@@ -24,12 +24,12 @@ describe('LoadingSpin', () => {
         })
     })
 
-    test.skip('should render with passed props set in style attribute', () => {
+    test('should render with passed props set in style attribute', () => {
         // when
         render(
             <LoadingSpin
                 animationDirection="alternate"
-                animationDurationMS={1000}
+                animationDuration="10s"
                 animationTimingFunction="linear"
                 borderWidth="10px"
                 primaryColor="rgb(244,11,21)"
@@ -47,7 +47,7 @@ describe('LoadingSpin', () => {
             height: '40px',
             width: '40px',
             borderWidth: '10px',
-            // animationDurationMS: '10s',
+            animationDuration: '10s',
             animationTimingFunction: 'linear',
             animationDirection: 'alternate',
             borderColor: '#aaa',
